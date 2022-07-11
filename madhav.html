@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+    .nav-link{
+        color: black;
+        margin-left:40px;
+        font-size:25px;
+    }
+    h1{
+    color: darkblue; 
+    font-size: 80px;   
+    width: 600px;
+    }
+    li{
+        font-weight: bolder;
+        font-size: 25px;
+        margin-right: 80px;
+        margin-top:50px;
+    }
+    .btn{
+        background-color: antiquewhite;
+        color: red;
+        margin-left: 50px;
+        padding: 15px;
+        width: 150px;
+    }
+    .btn::hover{
+        background-color: aliceblue;
+    }
+</style> 
+<script type="text/javascript">
+    function change(a){
+        var x=document.getElementsByClassName("nav-link");
+        for(i=0;i<x.length;i++){
+            x[i].style.color='black';
+        }
+        a.style.color="red";
+    }
+</script>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+            <img src="image.jpg" alt="" width="90" height="90" style="margin:0;">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                
+              <a class="nav-link" href="#" onclick="change(this)">Home</a>
+              <a class="nav-link" href="#" onclick="change(this)">Project</a>
+              <a class="nav-link" href="#" onclick="change(this)">Pages</a>
+              <a class="nav-link" href="#" onclick="change(this)">Elements</a>
+              <a class="nav-link" href="#" onclick="change(this)">Blog</a>
+              <a class="nav-link" href="#" onclick="change(this)">Shop</a>
+              <a class="nav-link" href="#" onclick="change(this)">Contact</a>
+              
+            </div>
+            <div class="btn">Buy Rogan&rarr;</div>
+          </div>
+        </div>
+      </nav>
+      <div style="margin-top: 100px;margin-left: 40px;display:flex;">
+        <div>
+        <div style="background-color:wheat;width: 210px;border-radius: 3px;padding: 7px;"><font color="red">70% Off</font> for first 3 months</div>
+        <h1>Digital Agency with Excellence Services.</h1>
+        The three golden rules professnal graphic designer don't</div><div>
+        <img src="image.jpg" alt="" style="float:right;height:400px;width:500px;"></div>
+      </div>
+    <ul style="list-style-type: none;display: flex;">
+        
+            <li>[Student Name]</li>
+            <li>[University Role]</li>
+            <li>GLA University,Mathura</li>
+            <li>11-07-2022</li>
+        
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
